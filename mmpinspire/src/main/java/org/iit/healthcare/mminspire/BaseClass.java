@@ -62,7 +62,8 @@ public class BaseClass {
      public void tearDown()
 
       {
-             driver.close();
+            System.out.println("Closing the browser");
+	      driver.close();
        }
 
 
