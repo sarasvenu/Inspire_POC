@@ -57,6 +57,15 @@ public class BaseClass {
 		prop.load(fis);
 		return prop;
 	}
+	
+     @AfterClass
+     public void tearDown()
+
+      {
+             driver.close();
+       }
+
+
 
 
 }
