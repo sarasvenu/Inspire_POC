@@ -1,5 +1,7 @@
 package org.iit.mmp.patient.pageobjects;
 
+import org.openqa.selenium.Alert;
+
 //Page object model approach
 
 import org.openqa.selenium.By;
@@ -73,6 +75,14 @@ public class EditProfilePage {
 		 driver.findElement(saveButtonLocator).click();
 	 }
 	
-	 
+	 public void handlealert()
+	 {
+		
+		    Alert salert = driver.switchTo().alert();
+			System.out.println("Alert message: " +salert.getText());
+			salert.accept();	
+		 
+		
+	 }
 	 
 }

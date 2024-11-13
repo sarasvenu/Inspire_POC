@@ -92,6 +92,15 @@ public class EditProfilePage2 {
 		 
 	 }
 	
-	 
+	 public String handlealert()
+	 {
+		
+		    Alert salert = driver.switchTo().alert();
+			System.out.println("Alert message: " +salert.getText());
+			salert.accept();	
+		 
+		 return salert.getText();
+		 
+	 }
 	 
 }

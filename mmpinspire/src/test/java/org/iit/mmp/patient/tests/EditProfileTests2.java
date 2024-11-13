@@ -26,13 +26,14 @@ public class EditProfileTests2 extends BaseClass{
 		
 		
 		EditProfilePage editprofilePage = new EditProfilePage(driver);         //Page object model
-		//EditProfilePage2 editprofilePage = new EditProfilePage2(driver);    //Page Factory
+		//EditProfilePage2 editprofilePage2 = new EditProfilePage2(driver);    //Page Factory
 		editprofilePage.clickEdit();
 		editprofilePage.setFirstName("John");
 		editprofilePage.setLasttName("Smith");
 		editprofilePage.setLicenseNumber("12345678");
 		editprofilePage.setssnNumber("111003344");
 		editprofilePage.clickSave();
+		editprofilePage.handlealert();
 		
 	}
 	
