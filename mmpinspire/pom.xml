@@ -91,7 +91,7 @@
 					<version>3.5.0</version>
 					<configuration>
 						<suiteXmlFiles>
-							<suiteXmlFile>testng.xml</suiteXmlFile>
+							<suiteXmlFile>SA.xml</suiteXmlFile>
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>

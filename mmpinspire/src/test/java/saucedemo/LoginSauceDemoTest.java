@@ -42,6 +42,9 @@ public class LoginSauceDemoTest {
 
 		//cart
 		driver.findElement(By.xpath("//span[@class='shopping_cart_badge']")).click();   
+		
+		String text = driver.findElement(By.xpath("//div[@class='inventory_item_name']")).getText();
+		System.out.println("Item name in cart is : " +text);
 
 	}
 
